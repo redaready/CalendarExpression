@@ -4,18 +4,21 @@ CalendarExpression
 CalendarExpression
 
 date: YYYY.MM.DD
+
 weekdays: *[1-7]{1,7}
 
 periode: /begin:date-end:date/
+
 weekdays_in_periode: periode weekdays
 
 calendar: date|periode|weekdays_in_periode
 
+
 operators:
 
 union: +
-difference: -
 
+difference: -
 
 calendar expression: calendar [operator calendar]...
 
